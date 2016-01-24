@@ -12,6 +12,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="animate.min.css">
+  <script type="text/javascript">
+  var jumboHeight = $('.jumbotron').outerHeight();
+
+  function parallax() {
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight - scrolled) + 'px');
+  }
+
+  $(window).scroll(function(e) {
+    parallax();
+  });
+  </script>
 </head>
 
 <body>
@@ -42,10 +54,11 @@
   </nav>
   <!-- End Navbar -->
   <!-- jumbotron -->
+  <div class="bg"></div>
   <div class="jumbotron">
     <div class="container text-center">
-      <h1 class="animated fadeIn">Directions</h1>
-      <p>Thank you We at Directions really appreciate you taking time out your busy schedule to visit this website. In reviewing the vast array of services that we provide, we hope that you become not only inspired but more involved in your community. If not us, choose an organization of your choice to make a difference in some one’s life. We all have a purpose, we all have a talent that is unique to ourselves, DO NOT let your talent go to waste- Serve! The world in not lost, your family in not lost, your company is not lost and most importantly you are not lost. Let us, help you get on the path today for a better tomorrow.</p>
+      <h1 class="animated fadeInDown">Directions</h1>
+      <p class="animated fadeInDown">Thank you We at Directions really appreciate you taking time out your busy schedule to visit this website. In reviewing the vast array of services that we provide, we hope that you become not only inspired but more involved in your community. <!-- If not us, choose an organization of your choice to make a difference in some one’s life. We all have a purpose, we all have a talent that is unique to ourselves, DO NOT let your talent go to waste- Serve! The world in not lost, your family in not lost, your company is not lost and most importantly you are not lost. Let us, help you get on the path today for a better tomorrow. --></p>
       <div class="btn-group">
         <a href="" class="btn btn-lg btn-default animated pulse">Donate</a>
       </div>
@@ -72,19 +85,18 @@
         </div>
       </div>
     </section>
-  </div> <!-- End Container -->
-
+  </div>
+  <!-- End Container -->
   <!-- call to action -->
-    <section>
-      <div class="well">
-        <div class="container text-center">
-          <h3> Put something in here  </h3>
-
-
-
-        </div> <!-- End Container -->
-      </div>  <!-- End Well -->
-    </section>
+  <section>
+    <div class="well">
+      <div class="container text-center">
+        <h3> Put something in here  </h3>
+      </div>
+      <!-- End Container -->
+    </div>
+    <!-- End Well -->
+  </section>
   <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
