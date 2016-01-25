@@ -7,9 +7,26 @@
   }
 
   .navbar-inverse {
-    background-image: linear-gradient(to bottom,#02B7D6 0,#02B7D6 100%);
+    background-image: linear-gradient(to bottom, #02B7D6 0, #02B7D6 100%);
     border-color: #02B7D6;
     height: 5.625em;
+  }
+
+  .navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-size: 1em;
+    margin: 0 40px 0 0;
+    text-transform: uppercase;
+    padding-top: 1.875em;
+  }
+
+  .navbar-inverse .navbar-nav>li>a:hover {
+    color: lightgrey;
+  }
+
+  li {
+    float: none;
+    display: inline-block;
   }
 
   body {
@@ -63,7 +80,7 @@
   .jumbotron p {
     color: white;
     /*font-size: 1.313em;*/
-    font-size: 3.125em;
+    font-size: 3em;
     line-height: 1.500em;
     text-align: center;
     /*SHADOWSTUFF*/
@@ -105,7 +122,6 @@
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;
-    color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
     text-indent: 0px;
@@ -125,9 +141,7 @@
   /*BUTTONS*/
 
   .btn-group>.btn:first-child {
-
     margin-left: 0;
-    color: white;
     display: inline-block;
     box-sizing: content-box;
     top: auto;
@@ -139,7 +153,8 @@
     border-image-width: initial;
     border-image-outset: initial;
     border-image-repeat: initial;
-    color: rgb(255, 255, 255);
+    /*color: rgba(255, 255, 255);*/
+    color: #02B7D6;
     text-decoration: none;
     text-align: center;
     text-indent: 0px;
@@ -150,5 +165,4 @@
     padding: 25px;
     outline: none;
     border: none;
-
   }
